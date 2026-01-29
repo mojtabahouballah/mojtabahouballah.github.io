@@ -3,6 +3,9 @@ layout: single
 author_profile: true
 ---
 
+
+
+
 I am a postdoctoral researcher working on agroecosystem and forest ecosystem modelling,
 with a focus on ecosystem responses to disturbances, resilience, and adaptive management.
 
