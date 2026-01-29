@@ -8,10 +8,7 @@ title: "Home"
 title_separator: "–"
 name: "Mojtaba Houballah"
 
-description: >
-  Postdoctoral researcher in agroecosystem and forest ecosystem modelling,
-  carbon dynamics, land surface models (ORCHIDEE–STICS),
-  multicriteria analysis and viability-based approaches.
+description: 
 
 url: "https://mojtabahouballah.github.io"
 baseurl: ""   # MUST be empty for username.github.io
@@ -37,9 +34,9 @@ author:
   email: "mojtaba.houballah@lsce.ipsl.fr"
 
   # Academic profiles
-  googlescholar: "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  orcid: "https://orcid.org/0000-0002-XXXX-XXXX"   # replace if you want
-  researchgate:
+  googlescholar: "https://scholar.google.fr/citations?user=s7wp0O8AAAAJ&hl=fr"
+  orcid: "https://orcid.org/0000-0002-6790-2223"   # replace if you want
+  researchgate: "https://www.researchgate.net/profile/Mojtaba-Houballah?ev=hdr_xprf"
   scopus:
   semantic:
   pubmed:
