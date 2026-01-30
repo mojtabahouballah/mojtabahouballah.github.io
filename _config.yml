@@ -14,9 +14,7 @@ url: "https://mojtabahouballah.github.io"
 baseurl: ""   # MUST be empty for username.github.io
 repository: "mojtabahouballah/mojtabahouballah.github.io"
 
-breadcrumbs: false
-future: true
-words_per_minute: 160
+
 
 # =========================================================
 # AUTHOR PROFILE (LEFT SIDEBAR)
