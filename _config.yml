@@ -8,7 +8,7 @@ title: "Home"
 title_separator: "–"
 name: "Mojtaba Houballah"
 
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description: 
 
 url: "https://mojtabahouballah.github.io"
 baseurl: ""   # MUST be empty for username.github.io
