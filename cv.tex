@@ -1,0 +1,114 @@
+% Editable CV source. Compile with pdfLaTeX (Overleaf compatible).
+% Content matches the research CV. Layout is recreated in LaTeX.
+% Edit the text below; adjust margins and spacing here if content grows.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.65in,top=0.45in,bottom=0.5in]{geometry}
+\usepackage{xcolor,enumitem,microtype,fancyhdr}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,urlcolor=roleblue]{hyperref}
+\definecolor{sectionred}{HTML}{900028}
+\definecolor{roleblue}{HTML}{1749A5}
+% PORTFOLIO: paste your real GitHub Pages URL between the braces below.
+% Example format only: https://YOUR-USERNAME.github.io/portfolio/
+% Leave empty until your website is published. Empty means no broken hyperlink.
+\newcommand{\portfolioURL}{}
+\newcommand{\emptyPortfolio}{}
+\newcommand{\portfoliolink}{\ifx\portfolioURL\emptyPortfolio Portfolio: link to add\else\href{\portfolioURL}{Portfolio website}\fi}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\footnotesize Mojtaba Houballah\quad\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=14pt,label=\textbullet,itemsep=2pt,topsep=3pt,parsep=0pt,partopsep=0pt}
+\newcommand{\cvsection}[1]{\par\addvspace{10pt}{\color{sectionred}\bfseries\fontsize{11pt}{13pt}\selectfont\MakeUppercase{#1}}\par\nobreak\vspace{3pt}\hrule height 0.4pt\relax\vspace{5pt}}
+\newcommand{\cvrole}[1]{\par\addvspace{5pt}{\color{roleblue}\bfseries #1}\par\nobreak}
+\hypersetup{pdftitle={Mojtaba Houballah CV},pdfauthor={Mojtaba Houballah}}
+\begin{document}
+\fontsize{11pt}{13.5pt}\selectfont
+\begin{center}
+{\fontsize{25pt}{29pt}\selectfont\MakeUppercase{Mojtaba Houballah}}\\[5pt]
+Numerical Modeling Scientist\quad |\quad PhD in Informatics\\[3pt]
+Paris region, France\quad |\quad \href{mailto:mojtaba.houballah@gmail.com}{mojtaba.houballah@gmail.com}\\[3pt]
+\portfoliolink
+\end{center}
+% Profile
+\cvsection{Profile}
+Numerical modeling scientist with a PhD in Informatics and a background in optimization. Develops, calibrates, and evaluates process-based environmental models driven by climate and meteorological inputs. Experienced in scientific computing, large simulation workflows, site-based validation, and uncertainty analysis. Interested in applying these methods to renewable-energy resource and yield assessment.\par
+
+% Technical expertise
+\cvsection{Technical expertise}
+\textbf{Numerical models: }Mathematical formulation, process-based simulation, implementation, and validation.\par
+\textbf{Meteorological and climate data: }Forcing preparation, quality control, large datasets, and site observations.\par
+\textbf{Calibration and uncertainty: }Optimization, sensitivity analysis, data assimilation, and error propagation.\par
+\textbf{Scientific computing: }Python, Fortran, R, shell scripting, Linux, and high-performance computing.\par
+\textbf{Collaboration and supervision: }Interdisciplinary research, technical presentations, and student mentoring.\par
+
+% Professional experience
+\cvsection{Professional experience}
+\cvrole{Postdoctoral Researcher\hfill Sep 2023 - Aug 2026}
+\textit{LSCE / IPSL, France}\par
+\begin{itemize}
+\item Developed and evaluated ORCHIDEE-CROP, integrating STICS formulations into a coupled land-surface model with carbon, nitrogen, water, and energy processes.
+\item Developed Fortran, Python, R, and shell workflows for meteorological and climate-data preparation, quality control, model execution, and analysis of large numerical outputs on HPC systems.
+\item Implemented a coupled nitrogen-water stress scheme; diagnosed simulation behavior across European sites with contrasting climate and management conditions.
+\item Applied ORCHIDAS to parameter optimization, sensitivity analysis, and assessment of parameter transferability; evaluated simulations against observations.
+\item Supervised a student project on maize parameter optimization with ORCHIDAS in 2026.
+\end{itemize}
+\cvrole{Postdoctoral Researcher\hfill Oct 2021 - Jul 2023}
+\textit{ESE, Université Paris-Saclay, France}\par
+\begin{itemize}
+\item Developed and calibrated AMG-Forest, a process-based soil-carbon model evaluated against observations from the French RENECOFOR forest-monitoring network.
+\item Analyzed parameter sensitivity and model behavior using soil-carbon observations and Rock-Eval-derived indicators.
+\item Compared performance across sites and contributed to a framework for coupling with CASTANEA.
+\end{itemize}
+
+% Page two begins here. Remove this break if you prefer automatic pagination.
+\newpage
+
+% Professional experience
+\cvsection{Professional experience}
+\cvrole{Postdoctoral Researcher\hfill Jun 2020 - Jul 2021}
+\textit{INRAE-SILVA, Nancy, France}\par
+\begin{itemize}
+\item Combined heterogeneous institutional datasets into regional resource-flow models using data reconciliation.
+\item Assessed measurement uncertainty and error propagation in regional biomass and carbon estimates.
+\item Compared resource-use scenarios with carbon-accounting tools in collaboration with researchers and regional stakeholders.
+\end{itemize}
+\cvrole{Doctoral Researcher\hfill Dec 2016 - Dec 2019}
+\textit{Université Clermont Auvergne / INRAE, France}\par
+\begin{itemize}
+\item Developed dynamic models of environmental and management systems, linking physical processes, decisions, and economic constraints.
+\item Applied optimization, control theory, and viability theory to identify management strategies that remain feasible under changing constraints.
+\item Designed long-term simulations and multicriteria assessments, applied to forest management; produced three first-author peer-reviewed publications.
+\end{itemize}
+
+% Education
+\cvsection{Education}
+\textbf{PhD in Informatics, 2019: }Université Clermont Auvergne, France. Mathematical modeling of environmental systems using viability theory.\par
+\textbf{Master II in Optimization, 2016: }Université Paris-Saclay, France.\par
+\textbf{Master I in Mathematics, 2015: }Lebanese University, Beirut.\par
+\textbf{BSc in Pure Mathematics, 2014: }Lebanese University, Nabatieh.\par
+
+% Technical communication and mentorship
+\cvsection{Technical communication and mentorship}
+\begin{itemize}
+\item Supervised Ernest Djmodi on crop parameter optimization using ORCHIDAS (2026) and Jean Weber on territorial wood-flow quantification (2021).
+\item Presented ORCHIDEE-CROP development at the STICS Conference, Belgium (2026), and forest soil-carbon modeling at the EGU General Assembly, Austria (2023).
+\end{itemize}
+
+% Selected research outputs
+\cvsection{Selected research outputs}
+\begin{itemize}
+\item Houballah, M. et al. Simulation of decadal variations in soil organic carbon stocks in French forests. \textit{Geoderma}, 2026. \href{https://www.sciencedirect.com/science/article/pii/S0016706126002545}{Published article}.
+\item Houballah, M., Cordonnier, T., Mathias, J.-D. Maintaining or building roads? An adaptive management approach for preserving forest multifunctionality. Forest Ecology and Management, 537, 120957, 2023.
+\item Houballah, M. et al. Development of ORCHIDEE-CROP v1.0: a nitrogen-explicit agro-land-surface model and its evaluation across European wheat sites. Manuscript in preparation.
+\end{itemize}
+
+% Modeling frameworks
+\cvsection{Modeling frameworks}
+ORCHIDEE-CROP, ORCHIDEE, STICS, ORCHIDAS, AMG-Forest, AMG, Century, CASTANEA, Carbon Accounting Tool.\par
+\end{document}
